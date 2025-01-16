@@ -1,12 +1,12 @@
 streamlit
-numpy
+numpy==1.22.0
 pandas
 seaborn
 matplotlib
 scikit-learn
 nltk
 mlxtend
-tensorflow
+tensorflow==2.12.0
 wordcloud
 setuptools
 wheel
