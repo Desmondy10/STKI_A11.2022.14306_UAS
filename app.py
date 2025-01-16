@@ -29,6 +29,12 @@ from tensorflow.keras.optimizers import RMSprop
 from tensorflow.keras.preprocessing.text import Tokenizer
 from tensorflow.keras.preprocessing import sequence
 from wordcloud import WordCloud
+import os
+import subprocess
+
+# Perintah untuk mendownload file besar dari GitHub LFS
+if not os.path.exists("your_file.csv"):
+    subprocess.run(["git", "lfs", "pull"])
 
 # Download stopwords
 nltk.download('stopwords')
