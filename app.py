@@ -33,7 +33,7 @@ import os
 import subprocess
 
 # Perintah untuk mendownload file besar dari GitHub LFS
-if not os.path.exists("your_file.csv"):
+if not os.path.exists("training.1600000.processed.noemoticon.csv"):
     subprocess.run(["git", "lfs", "pull"])
 
 # Download stopwords
