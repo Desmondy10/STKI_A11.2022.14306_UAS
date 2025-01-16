@@ -8,3 +8,5 @@ nltk
 mlxtend
 tensorflow
 wordcloud
+os
+subprocess
