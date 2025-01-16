@@ -11,3 +11,4 @@ wordcloud==1.9.2
 setuptools==65.5.0
 wheel==0.41.0
 pip==24.3.1
+disutils
