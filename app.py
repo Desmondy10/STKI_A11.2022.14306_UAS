@@ -40,7 +40,11 @@ if not os.path.exists("training.1600000.processed.noemoticon.csv"):
     subprocess.run(["git", "lfs", "pull"])
 
 # Download stopwords
-nltk.download('stopwords')
+stopwords_path = os.path.join(nltk.data.find('corpora/stopwords')._path)
+if os.path.exists(stopwords_path):
+    print("Stopwords already installed.")
+else:
+    nltk.download('stopwords')
 
 # Function to load and process data
 def load_data():
