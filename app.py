@@ -32,6 +32,9 @@ from wordcloud import WordCloud
 import os
 import subprocess
 
+# Tentukan bahwa hanya CPU yang akan digunakan
+tf.config.set_visible_devices([], 'GPU')
+
 # Perintah untuk mendownload file besar dari GitHub LFS
 if not os.path.exists("training.1600000.processed.noemoticon.csv"):
     subprocess.run(["git", "lfs", "pull"])
